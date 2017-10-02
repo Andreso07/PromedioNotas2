@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NoteAverage</string>
+    <string name="Acorreo">Email</string>
+    <string name="Aing">Ing</string>
+    <string name="Anombre">Name</string>
+    <string name="ingSoft">Software Engineering II</string>
+    <string name="materia1">Structures II</string>
+    <string name="paDiseno">Design Patterns</string>
+    <string name="btncalcular">Calculate Average</string>
+    <string name="acerca">About</string>
+    <string name="Asalir">GetUp</string>
+    <string name="app">App Development</string>
+    <string name="calculoNotas">Calculation of Notes</string>
+    <string name="tvIng">Engineering systems</string>
+    <string name="tvNombre">Carlos Guerrero</string>
+
+
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NoteAverage</string>
+    <string name="Aing">Ing</string>
+    <string name="Anombre">Name</string>
+    <string name="Asalir">GetUp</string>
+    <string name="acerca">About</string>
+    <string name="app">App Development</string>
+    <string name="btncalcular">Calculate total average</string>
+    <string name="calculoNotas">Calculation of Notes</string>
+    <string name="ingSoft">Software Engineering II</string>
+    <string name="materia1">Structures II</string>
+    <string name="paDiseno">Design Patterns</string>
+    <string name="Acorreo">Email</string>
+    <string name="tvIng">Engineering systems</string>
+    <string name="tvNombre">Carlos Guerrero</string>
+    <string name="nota1">Note 1:</string>
+    <string name="nota2">Note 2:</string>
+    <string name="nota3">Note 3:</string>
+    <string name="proTotal">Total Average</string>
+</resources>

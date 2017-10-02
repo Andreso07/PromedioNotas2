@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PromedioNotas</string>
+    <string name="acerca">Acerca De</string>
+    <string name="Anombre">Nombre:</string>
+    <string name="Acorreo">Email:</string>
+    <string name="Aing">Ing:</string>
+    <string name="Asalir">salir</string>
+    <string name="app">Desarrollo App</string>
+    <string name="btncalcular">Calcular Promedio Total</string>
+    <string name="calculoNotas">Calculo de notas</string>
+    <string name="ingSoft">Ingenieria Software II</string>
+    <string name="paDiseno">Patrones Diseño</string>
+    <string name="tvIng">Ingeniero de Sistemas</string>
+    <string name="materia1">Estructuras II</string>
+    <string name="tvNombre">Carlos Guerrero</string>
+    <string name="nota1">Nota 1:</string>
+    <string name="nota2">Nota 2:</string>
+    <string name="nota3">Nota 3:</string>
+    <string name="proTotal">Promedio Total</string>
+</resources>
