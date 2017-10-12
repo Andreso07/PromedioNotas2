@@ -81,14 +81,14 @@ public class MainActivity extends AppCompatActivity {
                     SharedPreferences prefe1=getSharedPreferences("mat1", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor=prefe1.edit();
 
-                    String nota1 = edTN1M1.getText().toString();
+                    float nro1 = Float.parseFloat(edTN1M1.getText().toString());
                     editor.putString("m1Nota1", edTN1M1.getText().toString());
 
-                    String nota2 = edTN2M1.getText().toString();
-                    String nota3 = edTN3M1.getText().toString();
-                    float nro1 = Float.parseFloat(nota1);
-                    float nro2 = Float.parseFloat(nota2);
-                    float nro3 = Float.parseFloat(nota3);
+                    float nro2 = Float.parseFloat(edTN2M1.getText().toString());
+                    editor.putString("m1Nota2", edTN2M1.getText().toString());
+
+                    float nro3 = Float.parseFloat(edTN3M1.getText().toString());
+                    editor.putString("m1Nota3", edTN3M1.getText().toString());
 
                     if(nro1<=5 && nro1>=0) {
 
@@ -100,15 +100,16 @@ public class MainActivity extends AppCompatActivity {
                         editor.commit();
                         tVDef1.setText(materia1);
                     }else{
-                        Toast noMayor = Toast.makeText(MainActivity.this, "No debe ser mayor que 5", Toast.LENGTH_LONG);
+                        Toast noMayor=Toast.makeText(MainActivity.this,getResources().getString(R.string.toast1),Toast.LENGTH_LONG);
                         noMayor.show();
                     }
 
                 } catch (Exception e) {
                     if (edTN1M1.getText().toString().equals("")) {
-                        Toast vacio = Toast.makeText(MainActivity.this, "Debe llenar todos los campos", Toast.LENGTH_LONG);
+
+                        Toast vacio=Toast.makeText(MainActivity.this,getResources().getString(R.string.toastLlenarCampos),Toast.LENGTH_LONG);
                         vacio.show();
-                        Toast m1n1 = Toast.makeText(MainActivity.this, "Campo vacio Nota1", Toast.LENGTH_LONG);
+                        Toast m1n1=Toast.makeText(MainActivity.this,getResources().getString(R.string.toastNota1),Toast.LENGTH_LONG);
                         m1n1.show();
                     }
                 }
@@ -133,14 +134,14 @@ public class MainActivity extends AppCompatActivity {
                     SharedPreferences prefe1=getSharedPreferences("mat1", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor=prefe1.edit();
 
-                    String nota1 = edTN1M1.getText().toString();
-                    String nota2 = edTN2M1.getText().toString();
+                    float nro1 = Float.parseFloat(edTN1M1.getText().toString());
+                    editor.putString("m1Nota1", edTN1M1.getText().toString());
+
+                    float nro2 = Float.parseFloat(edTN2M1.getText().toString());
                     editor.putString("m1Nota2", edTN2M1.getText().toString());
 
-                    String nota3 = edTN3M1.getText().toString();
-                    float nro1 = Float.parseFloat(nota1);
-                    float nro2 = Float.parseFloat(nota2);
-                    float nro3 = Float.parseFloat(nota3);
+                    float nro3 = Float.parseFloat(edTN3M1.getText().toString());
+                    editor.putString("m1Nota3", edTN3M1.getText().toString());
 
                     if(nro2<=5 && nro2>=0) {
 
@@ -151,13 +152,13 @@ public class MainActivity extends AppCompatActivity {
                         editor.commit();
                         tVDef1.setText(materia1);
                     }else {
-                        Toast noMayor = Toast.makeText(MainActivity.this, "No debe ser mayor que 5", Toast.LENGTH_LONG);
+                        Toast noMayor=Toast.makeText(MainActivity.this,getResources().getString(R.string.toast1),Toast.LENGTH_LONG);
                         noMayor.show();
                     }
 
                 } catch (Exception e) {
                     if (edTN2M1.getText().toString().equals("")) {
-                        Toast m1n2 = Toast.makeText(MainActivity.this, "Campo vacio Nota2", Toast.LENGTH_LONG);
+                        Toast m1n2=Toast.makeText(MainActivity.this,getResources().getString(R.string.toastNota2),Toast.LENGTH_LONG);
                         m1n2.show();
                     }
                 }
@@ -182,14 +183,14 @@ public class MainActivity extends AppCompatActivity {
                     SharedPreferences prefe1=getSharedPreferences("mat1", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor=prefe1.edit();
 
-                    String nota1 = edTN1M1.getText().toString();
-                    String nota2 = edTN2M1.getText().toString();
-                    String nota3 = edTN3M1.getText().toString();
-                    editor.putString("m1Nota3", edTN3M1.getText().toString());
+                    float nro1 = Float.parseFloat(edTN1M1.getText().toString());
+                    editor.putString("m1Nota1", edTN1M1.getText().toString());
 
-                    float nro1 = Float.parseFloat(nota1);
-                    float nro2 = Float.parseFloat(nota2);
-                    float nro3 = Float.parseFloat(nota3);
+                    float nro2 = Float.parseFloat(edTN2M1.getText().toString());
+                    editor.putString("m1Nota2", edTN2M1.getText().toString());
+
+                    float nro3 = Float.parseFloat(edTN3M1.getText().toString());
+                    editor.putString("m1Nota3", edTN3M1.getText().toString());
 
                     if(nro3<=5 && nro3>=0) {
 
@@ -200,13 +201,13 @@ public class MainActivity extends AppCompatActivity {
                         editor.commit();
                         tVDef1.setText(materia1);
                     }else{
-                        Toast noMayor = Toast.makeText(MainActivity.this, "No debe ser mayor que 5", Toast.LENGTH_LONG);
+                        Toast noMayor=Toast.makeText(MainActivity.this,getResources().getString(R.string.toast1),Toast.LENGTH_LONG);
                         noMayor.show();
                     }
 
                 } catch (Exception e) {
                     if(edTN3M1.getText().toString().equals("")) {
-                        Toast m1n3 = Toast.makeText(MainActivity.this, "Campo vacio Nota3", Toast.LENGTH_LONG);
+                        Toast m1n3=Toast.makeText(MainActivity.this,getResources().getString(R.string.toastNota3),Toast.LENGTH_LONG);
                         m1n3.show();
                     }
                 }
@@ -242,15 +243,14 @@ public class MainActivity extends AppCompatActivity {
                     SharedPreferences prefe2=getSharedPreferences("mat2", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor=prefe2.edit();
 
-                    String nota1 = edTN1M2.getText().toString();
+                    float nro1 = Float.parseFloat(edTN1M2.getText().toString());
                     editor.putString("m2Nota1", edTN1M2.getText().toString());
 
-                    String nota2 = edTN2M2.getText().toString();
-                    String nota3 = edTN3M2.getText().toString();
-                    float nro1 = Float.parseFloat(nota1);
-                    float nro2 = Float.parseFloat(nota2);
-                    float nro3 = Float.parseFloat(nota3);
+                    float nro2 = Float.parseFloat(edTN2M2.getText().toString());
+                    editor.putString("m2Nota2", edTN2M2.getText().toString());
 
+                    float nro3 = Float.parseFloat(edTN3M2.getText().toString());
+                    editor.putString("m2Nota3", edTN3M2.getText().toString());
                     if(nro1<=5 && nro1>=0) {
 
                     double result = (((nro1 + nro2) / 2) * 0.6) + (nro3 * 0.4);
@@ -260,13 +260,13 @@ public class MainActivity extends AppCompatActivity {
                     editor.commit();
                     tVDef2.setText(materia2);
                     }else{
-                        Toast noMayor = Toast.makeText(MainActivity.this, "No debe ser mayor que 5", Toast.LENGTH_LONG);
+                        Toast noMayor=Toast.makeText(MainActivity.this,getResources().getString(R.string.toast1),Toast.LENGTH_LONG);
                         noMayor.show();
                     }
 
                 } catch (Exception e) {
                     if (edTN1M2.getText().toString().equals("")) {
-                        Toast m2n1 = Toast.makeText(MainActivity.this, "Campo vacio Nota1", Toast.LENGTH_LONG);
+                        Toast m2n1=Toast.makeText(MainActivity.this,getResources().getString(R.string.toastNota1),Toast.LENGTH_LONG);
                         m2n1.show();
                     }
                 }
@@ -291,14 +291,14 @@ public class MainActivity extends AppCompatActivity {
                     SharedPreferences prefe2=getSharedPreferences("mat2", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor=prefe2.edit();
 
-                    String nota1 = edTN1M2.getText().toString();
-                    String nota2 = edTN2M2.getText().toString();
+                    float nro1 = Float.parseFloat(edTN1M2.getText().toString());
+                    editor.putString("m2Nota1", edTN1M2.getText().toString());
+
+                    float nro2 = Float.parseFloat(edTN2M2.getText().toString());
                     editor.putString("m2Nota2", edTN2M2.getText().toString());
 
-                    String nota3 = edTN3M2.getText().toString();
-                    float nro1 = Float.parseFloat(nota1);
-                    float nro2 = Float.parseFloat(nota2);
-                    float nro3 = Float.parseFloat(nota3);
+                    float nro3 = Float.parseFloat(edTN3M2.getText().toString());
+                    editor.putString("m2Nota3", edTN3M2.getText().toString());
 
                     if(nro2<=5 && nro2>=0) {
 
@@ -309,13 +309,13 @@ public class MainActivity extends AppCompatActivity {
                     editor.commit();
                     tVDef2.setText(materia2);
                     }else{
-                        Toast noMayor = Toast.makeText(MainActivity.this, "No debe ser mayor que 5", Toast.LENGTH_LONG);
+                        Toast noMayor=Toast.makeText(MainActivity.this,getResources().getString(R.string.toast1),Toast.LENGTH_LONG);
                         noMayor.show();
                     }
 
                 } catch (Exception e) {
                     if (edTN2M2.getText().toString().equals("")) {
-                        Toast m2n2 = Toast.makeText(MainActivity.this, "Campo vacio Nota2", Toast.LENGTH_LONG);
+                        Toast m2n2=Toast.makeText(MainActivity.this,getResources().getString(R.string.toastNota2),Toast.LENGTH_LONG);
                         m2n2.show();
                     }
                 }
@@ -340,14 +340,14 @@ public class MainActivity extends AppCompatActivity {
                     SharedPreferences prefe2=getSharedPreferences("mat2", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor=prefe2.edit();
 
-                    String nota1 = edTN1M2.getText().toString();
-                    String nota2 = edTN2M2.getText().toString();
-                    String nota3 = edTN3M2.getText().toString();
-                    editor.putString("m2Nota3", edTN3M2.getText().toString());
+                    float nro1 = Float.parseFloat(edTN1M2.getText().toString());
+                    editor.putString("m2Nota1", edTN1M2.getText().toString());
 
-                    float nro1 = Float.parseFloat(nota1);
-                    float nro2 = Float.parseFloat(nota2);
-                    float nro3 = Float.parseFloat(nota3);
+                    float nro2 = Float.parseFloat(edTN2M2.getText().toString());
+                    editor.putString("m2Nota2", edTN2M2.getText().toString());
+
+                    float nro3 = Float.parseFloat(edTN3M2.getText().toString());
+                    editor.putString("m2Nota3", edTN3M2.getText().toString());
 
                     if(nro3<=5 && nro3>=0) {
 
@@ -358,13 +358,13 @@ public class MainActivity extends AppCompatActivity {
                     editor.commit();
                     tVDef2.setText(materia2);
                     }else{
-                        Toast noMayor = Toast.makeText(MainActivity.this, "No debe ser mayor que 5", Toast.LENGTH_LONG);
+                        Toast noMayor=Toast.makeText(MainActivity.this,getResources().getString(R.string.toast1),Toast.LENGTH_LONG);
                         noMayor.show();
                     }
 
                 } catch (Exception e) {
                     if (edTN3M2.getText().toString().equals("")) {
-                        Toast m2n3 = Toast.makeText(MainActivity.this, "Campo vacio Nota3", Toast.LENGTH_LONG);
+                        Toast m2n3=Toast.makeText(MainActivity.this,getResources().getString(R.string.toastNota3),Toast.LENGTH_LONG);
                         m2n3.show();
                     }
                 }
@@ -399,14 +399,14 @@ public class MainActivity extends AppCompatActivity {
                     SharedPreferences prefe3=getSharedPreferences("mat3", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor=prefe3.edit();
 
-                    String nota1 = edTN1M3.getText().toString();
+                    float nro1 = Float.parseFloat(edTN1M3.getText().toString());
                     editor.putString("m3Nota1", edTN1M3.getText().toString());
 
-                    String nota2 = edTN2M3.getText().toString();
-                    String nota3 = edTN3M3.getText().toString();
-                    float nro1 = Float.parseFloat(nota1);
-                    float nro2 = Float.parseFloat(nota2);
-                    float nro3 = Float.parseFloat(nota3);
+                    float nro2 = Float.parseFloat(edTN2M3.getText().toString());
+                    editor.putString("m3Nota2", edTN2M3.getText().toString());
+
+                    float nro3 = Float.parseFloat(edTN3M3.getText().toString());
+                    editor.putString("m3Nota3", edTN3M3.getText().toString());
 
                     if(nro1<=5 && nro1>=0) {
 
@@ -417,13 +417,13 @@ public class MainActivity extends AppCompatActivity {
                     editor.commit();
                     tVDef3.setText(materia3);
                     }else{
-                        Toast noMayor = Toast.makeText(MainActivity.this, "No debe ser mayor que 5", Toast.LENGTH_LONG);
+                        Toast noMayor=Toast.makeText(MainActivity.this,getResources().getString(R.string.toast1),Toast.LENGTH_LONG);
                         noMayor.show();
                     }
 
                 } catch (Exception e) {
                     if (edTN1M3.getText().toString().equals("")) {
-                        Toast m3n1 = Toast.makeText(MainActivity.this, "Campo vacio Nota1", Toast.LENGTH_LONG);
+                        Toast m3n1=Toast.makeText(MainActivity.this,getResources().getString(R.string.toastNota1),Toast.LENGTH_LONG);
                         m3n1.show();
                     }
                 }
@@ -448,14 +448,14 @@ public class MainActivity extends AppCompatActivity {
                     SharedPreferences prefe3=getSharedPreferences("mat3", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor=prefe3.edit();
 
-                    String nota1 = edTN1M3.getText().toString();
-                    String nota2 = edTN2M3.getText().toString();
+                    float nro1 = Float.parseFloat(edTN1M3.getText().toString());
+                    editor.putString("m3Nota1", edTN1M3.getText().toString());
+
+                    float nro2 = Float.parseFloat(edTN2M3.getText().toString());
                     editor.putString("m3Nota2", edTN2M3.getText().toString());
 
-                    String nota3 = edTN3M3.getText().toString();
-                    float nro1 = Float.parseFloat(nota1);
-                    float nro2 = Float.parseFloat(nota2);
-                    float nro3 = Float.parseFloat(nota3);
+                    float nro3 = Float.parseFloat(edTN3M3.getText().toString());
+                    editor.putString("m3Nota3", edTN3M3.getText().toString());
 
                     if(nro2<=5 && nro2>=0) {
 
@@ -466,13 +466,13 @@ public class MainActivity extends AppCompatActivity {
                     editor.commit();
                     tVDef3.setText(materia3);
                     }else{
-                        Toast noMayor = Toast.makeText(MainActivity.this, "No debe ser mayor que 5", Toast.LENGTH_LONG);
+                        Toast noMayor=Toast.makeText(MainActivity.this,getResources().getString(R.string.toast1),Toast.LENGTH_LONG);
                         noMayor.show();
                     }
 
                 } catch (Exception e) {
                     if (edTN2M3.getText().toString().equals("")) {
-                        Toast m3n2 = Toast.makeText(MainActivity.this, "Campo vacio Nota2", Toast.LENGTH_LONG);
+                        Toast m3n2=Toast.makeText(MainActivity.this,getResources().getString(R.string.toastNota2),Toast.LENGTH_LONG);
                         m3n2.show();
                     }
                 }
@@ -497,14 +497,14 @@ public class MainActivity extends AppCompatActivity {
                     SharedPreferences prefe3=getSharedPreferences("mat3", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor=prefe3.edit();
 
-                    String nota1 = edTN1M3.getText().toString();
-                    String nota2 = edTN2M3.getText().toString();
-                    String nota3 = edTN3M3.getText().toString();
-                    editor.putString("m3Nota3", edTN2M3.getText().toString());
+                    float nro1 = Float.parseFloat(edTN1M3.getText().toString());
+                    editor.putString("m3Nota1", edTN1M3.getText().toString());
 
-                    float nro1 = Float.parseFloat(nota1);
-                    float nro2 = Float.parseFloat(nota2);
-                    float nro3 = Float.parseFloat(nota3);
+                    float nro2 = Float.parseFloat(edTN2M3.getText().toString());
+                    editor.putString("m3Nota2", edTN2M3.getText().toString());
+
+                    float nro3 = Float.parseFloat(edTN3M3.getText().toString());
+                    editor.putString("m3Nota3", edTN3M3.getText().toString());
 
                     if(nro3<=5 && nro3>=0) {
 
@@ -515,13 +515,13 @@ public class MainActivity extends AppCompatActivity {
                     editor.commit();
                     tVDef3.setText(materia3);
                     }else{
-                        Toast noMayor = Toast.makeText(MainActivity.this, "No debe ser mayor que 5", Toast.LENGTH_LONG);
+                        Toast noMayor=Toast.makeText(MainActivity.this,getResources().getString(R.string.toast1),Toast.LENGTH_LONG);
                         noMayor.show();
                     }
 
                 } catch (Exception e) {
                     if (edTN3M3.getText().toString().equals("")) {
-                        Toast m3n3 = Toast.makeText(MainActivity.this, "Campo vacio Nota3", Toast.LENGTH_LONG);
+                        Toast m3n3=Toast.makeText(MainActivity.this,getResources().getString(R.string.toastNota3),Toast.LENGTH_LONG);
                         m3n3.show();
                     }
                 }
@@ -557,14 +557,14 @@ public class MainActivity extends AppCompatActivity {
                     SharedPreferences prefe4=getSharedPreferences("mat4", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor=prefe4.edit();
 
-                    String nota1 = edTN1M4.getText().toString();
+                    float nro1 = Float.parseFloat(edTN1M4.getText().toString());
                     editor.putString("m4Nota1", edTN1M4.getText().toString());
 
-                    String nota2 = edTN3M4.getText().toString();
-                    String nota3 = edTN3M4.getText().toString();
-                    float nro1 = Float.parseFloat(nota1);
-                    float nro2 = Float.parseFloat(nota2);
-                    float nro3 = Float.parseFloat(nota3);
+                    float nro2 = Float.parseFloat(edTN2M4.getText().toString());
+                    editor.putString("m4Nota2", edTN2M4.getText().toString());
+
+                    float nro3 = Float.parseFloat(edTN3M4.getText().toString());
+                    editor.putString("m4Nota3", edTN3M4.getText().toString());
 
                     if(nro1<=5 && nro1>=0) {
 
@@ -575,13 +575,13 @@ public class MainActivity extends AppCompatActivity {
                     editor.commit();
                     tVDef4.setText(materia4);
                     }else{
-                        Toast noMayor = Toast.makeText(MainActivity.this, "No debe ser mayor que 5", Toast.LENGTH_LONG);
+                        Toast noMayor=Toast.makeText(MainActivity.this,getResources().getString(R.string.toast1),Toast.LENGTH_LONG);
                         noMayor.show();
                     }
 
                 } catch (Exception e) {
                     if (edTN1M4.getText().toString().equals("")) {
-                        Toast m4n1 = Toast.makeText(MainActivity.this, "Campo vacio Nota1", Toast.LENGTH_LONG);
+                        Toast m4n1=Toast.makeText(MainActivity.this,getResources().getString(R.string.toastNota1),Toast.LENGTH_LONG);
                         m4n1.show();
                     }
                 }
@@ -606,14 +606,14 @@ public class MainActivity extends AppCompatActivity {
                     SharedPreferences prefe4=getSharedPreferences("mat4", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor=prefe4.edit();
 
-                    String nota1 = edTN1M4.getText().toString();
-                    String nota2 = edTN2M4.getText().toString();
+                    float nro1 = Float.parseFloat(edTN1M4.getText().toString());
+                    editor.putString("m4Nota1", edTN1M4.getText().toString());
+
+                    float nro2 = Float.parseFloat(edTN2M4.getText().toString());
                     editor.putString("m4Nota2", edTN2M4.getText().toString());
 
-                    String nota3 = edTN3M4.getText().toString();
-                    float nro1 = Float.parseFloat(nota1);
-                    float nro2 = Float.parseFloat(nota2);
-                    float nro3 = Float.parseFloat(nota3);
+                    float nro3 = Float.parseFloat(edTN3M4.getText().toString());
+                    editor.putString("m4Nota3", edTN3M4.getText().toString());
 
                     if(nro2<=5 && nro2>=0) {
 
@@ -624,13 +624,13 @@ public class MainActivity extends AppCompatActivity {
                     editor.commit();
                     tVDef4.setText(materia4);
                     }else{
-                        Toast noMayor = Toast.makeText(MainActivity.this, "No debe ser mayor que 5", Toast.LENGTH_LONG);
+                        Toast noMayor=Toast.makeText(MainActivity.this,getResources().getString(R.string.toast1),Toast.LENGTH_LONG);
                         noMayor.show();
                     }
 
                 } catch (Exception e) {
                     if (edTN2M4.getText().toString().equals("")) {
-                        Toast m4n2 = Toast.makeText(MainActivity.this, "Campo vacio Nota2", Toast.LENGTH_LONG);
+                        Toast m4n2=Toast.makeText(MainActivity.this,getResources().getString(R.string.toastNota2),Toast.LENGTH_LONG);
                         m4n2.show();
                     }
                 }
@@ -655,14 +655,14 @@ public class MainActivity extends AppCompatActivity {
                     SharedPreferences prefe4=getSharedPreferences("mat4", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor=prefe4.edit();
 
-                    String nota1 = edTN1M4.getText().toString();
-                    String nota2 = edTN2M4.getText().toString();
-                    String nota3 = edTN3M4.getText().toString();
-                    editor.putString("m4Nota3", edTN3M4.getText().toString());
+                    float nro1 = Float.parseFloat(edTN1M4.getText().toString());
+                    editor.putString("m4Nota1", edTN1M4.getText().toString());
 
-                    float nro1 = Float.parseFloat(nota1);
-                    float nro2 = Float.parseFloat(nota2);
-                    float nro3 = Float.parseFloat(nota3);
+                    float nro2 = Float.parseFloat(edTN2M4.getText().toString());
+                    editor.putString("m4Nota2", edTN2M4.getText().toString());
+
+                    float nro3 = Float.parseFloat(edTN3M4.getText().toString());
+                    editor.putString("m4Nota3", edTN3M4.getText().toString());
 
                     if(nro3<=5 && nro3>=0) {
 
@@ -673,13 +673,13 @@ public class MainActivity extends AppCompatActivity {
                     editor.commit();
                     tVDef4.setText(materia4);
                     }else{
-                        Toast noMayor = Toast.makeText(MainActivity.this, "No debe ser mayor que 5", Toast.LENGTH_LONG);
+                        Toast noMayor=Toast.makeText(MainActivity.this,getResources().getString(R.string.toast1),Toast.LENGTH_LONG);
                         noMayor.show();
                     }
 
                 } catch (Exception e) {
                     if (edTN3M4.getText().toString().equals("")) {
-                        Toast m4n3 = Toast.makeText(MainActivity.this, "Campo vacio Nota3", Toast.LENGTH_LONG);
+                        Toast m4n3=Toast.makeText(MainActivity.this,getResources().getString(R.string.toastNota3),Toast.LENGTH_LONG);
                         m4n3.show();
                     }
                 }

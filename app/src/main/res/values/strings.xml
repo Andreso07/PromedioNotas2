@@ -17,4 +17,9 @@
     <string name="nota2">Nota 2:</string>
     <string name="nota3">Nota 3:</string>
     <string name="proTotal">Promedio Total</string>
+    <string name="toast1">No debe ser mayor que 5</string>
+    <string name="toastNota1">Campo vacio Nota1</string>
+    <string name="toastNota2">Campo vacio Nota2</string>
+    <string name="toastNota3">Campo vacio Nota3</string>
+    <string name="toastLlenarCampos">Debe llenar todos los campos</string>
 </resources>

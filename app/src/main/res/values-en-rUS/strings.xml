@@ -12,10 +12,15 @@
     <string name="materia1">Structures II</string>
     <string name="paDiseno">Design Patterns</string>
     <string name="Acorreo">Email</string>
-    <string name="tvIng">Engineering systems</string>
-    <string name="tvNombre">Carlos Guerrero</string>
     <string name="nota1">Note 1:</string>
     <string name="nota2">Note 2:</string>
     <string name="nota3">Note 3:</string>
     <string name="proTotal">Total Average</string>
+    <string name="toast1">\"Must not be greater than 5\"</string>
+    <string name="toastLlenarCampos">You must fill all fields</string>
+    <string name="toastNota1">\"Empty field Note1\"</string>
+    <string name="tvIng">Systems Engineer</string>
+    <string name="tvNombre">Carlos Guerrero</string>
+    <string name="toastNota2">\"Empty field Note2\"</string>
+    <string name="toastNota3">\"Empty field Note3\"</string>
 </resources>
