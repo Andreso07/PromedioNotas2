@@ -690,23 +690,37 @@ public class MainActivity extends AppCompatActivity {
 
     //SACA PROMEDIO
     public void promedio(View view){
-       try{
 
-           float tVDf1,tVDf2,tVDf3,tVDf4, PF;
 
-           tVDf1 = Float.parseFloat(tVDef1.getText().toString());
-           tVDf2 = Float.parseFloat(tVDef2.getText().toString());
-           tVDf3 = Float.parseFloat(tVDef3.getText().toString());
-           tVDf4 = Float.parseFloat(tVDef4.getText().toString());
+               if (edTN1M1.getText().toString().equals("") ||
+                   edTN2M1.getText().toString().equals("") ||
+                   edTN3M1.getText().toString().equals("") ||
+                   edTN1M2.getText().toString().equals("") ||
+                   edTN2M2.getText().toString().equals("") ||
+                   edTN3M2.getText().toString().equals("") ||
+                   edTN1M3.getText().toString().equals("") ||
+                   edTN2M3.getText().toString().equals("") ||
+                   edTN3M3.getText().toString().equals("") ||
+                   edTN1M4.getText().toString().equals("") ||
+                   edTN2M4.getText().toString().equals("") ||
+                   edTN3M4.getText().toString().equals("")) {
 
-           PF = ((tVDf1+tVDf2+tVDf3+tVDf4)/4);
-           String total = String.valueOf(PF);
-           NF.setText(total);
+               Toast total = Toast.makeText(MainActivity.this, getResources().getString(R.string.toastCampoVacio), Toast.LENGTH_LONG);
+               total.show();
+           }
+           else{
 
-       }catch (Exception e){
-           Toast total = Toast.makeText(MainActivity.this, "Campos vacios", Toast.LENGTH_LONG);
-           total.show();
-       }
+               float tVDf1,tVDf2,tVDf3,tVDf4, PF;
+
+               tVDf1 = Float.parseFloat(tVDef1.getText().toString());
+               tVDf2 = Float.parseFloat(tVDef2.getText().toString());
+               tVDf3 = Float.parseFloat(tVDef3.getText().toString());
+               tVDf4 = Float.parseFloat(tVDef4.getText().toString());
+
+               PF = ((tVDf1+tVDf2+tVDf3+tVDf4)/4);
+               String total = String.valueOf(PF);
+               NF.setText(total);
+           }
     }
 
     /**
