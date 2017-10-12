@@ -686,7 +686,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
     }
 
     //SACA PROMEDIO
